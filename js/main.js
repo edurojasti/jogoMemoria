@@ -6,13 +6,15 @@ const imagens = ['angular.svg', 'aurelia.svg', 'backbone.svg', 'ember.svg', 'rea
 
 let cardHTML = '';
 
+//bloco para criar uma div no html por cada elemento do array
 imagens.forEach(img => {
     cardHTML += `
     <div>
-        <img src="imgs/${img}"
+        <img src="imgs/${img}">
         <img src="imgs/js.svg">
     </div>
    `
 })
 
+//adiciona todo conteudo criado no cardHTML para a variável cardboard
 cardboard.innerHTML = cardHTML
