@@ -1,10 +1,10 @@
 //logica do game Memoria
 //@author: Eduardo Rojas
 
-const cardboard = document.getElementById("cardboard")
-const imagens = ['angular.svg', 'aurelia.svg', 'backbone.svg', 'ember.svg', 'react.svg', 'vue.js'] // <-- Array 
+const cardboard = document.getElementById("cardboard");
+const imagens = ['angular.svg', 'aurelia.svg', 'backbone.svg', 'ember.svg', 'react.svg', 'vue.js']; // <-- Array 
 
-var cardHTML = ''
+var cardHTML = '';
 
 imagens.forEach(img => {
     cardHTML += `
