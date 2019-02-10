@@ -1,16 +1,18 @@
 //logica do game Memoria
 //@author: Eduardo Rojas
 
-const cardboard = document.getElementById("cardboard");
-const imagens = ['angular.svg', 'aurelia.svg', 'backbone.svg', 'ember.svg', 'react.svg', 'vue.js']; // <-- Array 
+const cardboard = document.querySelector("#cardboard");
+const imagens = ['angular.svg', 'aurelia.svg', 'backbone.svg', 'ember.svg', 'react.svg', 'vue.svg']; // <-- Array 
 
-var cardHTML = '';
+let cardHTML = '';
 
 imagens.forEach(img => {
     cardHTML += `
     <div>
         <img src="imgs/${img}"
-        <img src="imgs/js-badge.svg">
+        <img src="imgs/js.svg">
     </div>
    `
 })
+
+cardboard.innerHTML = cardHTML
