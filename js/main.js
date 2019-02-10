@@ -23,7 +23,7 @@ cardboard.innerHTML = cardHTML + cardHTML
 //fim de renderização HMTL
 
 function flipcard(){
-    console.log(this)
+    this.classList.add('flip')
 }
 
 

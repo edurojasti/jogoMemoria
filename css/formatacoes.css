@@ -23,6 +23,8 @@ body{
     height: 33%;
     margin: 5px;
     position: relative;
+    transform-style: preserve-3d;
+    transition: 0.3s;
 }
 
 .memory-card:active{
@@ -40,4 +42,8 @@ body{
    height: 100%;
    position: absolute;
    padding: 20px;
+}
+
+.front-face{
+    transform: rotateY(180deg)
 }
